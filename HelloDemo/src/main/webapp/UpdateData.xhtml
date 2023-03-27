@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:body>
+	<center>
+		<h:form>
+			<h2 style="text-align: center" class="col-sm-4">Update Employ
+				Details</h2>
+			<hr />
+            
+Employ Id :
+                    <h:inputText id="empId"
+				value="#{employeData.empId}" />
+			<br />
+First Name :
+                    <h:inputText id="empFirstName"
+				value="#{employeData.empFirstName}" />
+			<br />
+Last Name :
+                    <h:inputText id="empLastName"
+				value="#{employeData.empLastName}" />
+			<br />
+Phone Number :
+                    <h:inputText id="empPhoneNumber"
+				value="#{employeData.empPhoneNumber}" />
+			<br />                    
+
+
+
+			<h:commandButton value="Update"
+				action="#{employeDataDAO.updateEmploy(employeData)}" />
+		</h:form>
+	</center>
+</h:body>
+
+</html>
